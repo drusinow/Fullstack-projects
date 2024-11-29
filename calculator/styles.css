@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container {
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#display {
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    cursor: default;
+    color: white;
+}
+#lastcalculation {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    cursor: default;
+    color: black;
+    text-align: right;
+}
+
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.clear {
+    background-color: rgb(150, 72, 0);
+}
+
